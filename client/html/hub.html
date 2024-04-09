@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/hub.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <!--Hero Section-->
+  <body>
+    <div class="bluractivation" id="blur">
+      <div class="background">
+        <div class="top">
+          <header>
+            <img class="logo" src="../images/big_logo.png" alt="logo" />
+            <nav>
+              <ul class="nav__links">
+                <li><a href="#">Over ons</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#hosting">Hosting</a></li>
+              </ul>
+            </nav>
+            <a class="cta" href="../html/login.html"><button>Log in</button></a>
+          </header>
+
+          <div class="front_page">
+            <div class="content">
+              <h1>
+                Optimalizeer<br /><span>Jouw bedrijf</span><br />met Gilde
+                Devops
+              </h1>
+              <p>
+                Het bedrijf levert een geavanceerd urenregistratieprogramma<br />
+                dat organisaties helpt bij het efficiënt bijhouden van
+                werktijd<br />
+                en het verkrijgen van waardevolle inzichten voor verbeterd
+                projectbeheer.
+              </p>
+              <a class="cta" href="../html/login.html"
+                ><button>Register</button></a
+              >
+            </div>
+            <img
+              class="feature-image"
+              src="../images/macbookpro.png"
+              alt="Feature Image"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="features">
+        <h1>
+          Uren registratie systeem en <br />
+          web hosting functies
+        </h1>
+      </div>
+      <!--Feature Section-->
+      <div class="row">
+        <div class="column1">
+          <h2>Import excel bestanden</h2>
+          <p class="info-1">
+            Met een moeiteloze Excel-importfunctie <br />maakt het programma het
+            eenvoudig <br />
+            om bestaande gegevens te integreren <br />
+            en snel te starten met de urenregistratie.
+          </p>
+        </div>
+        <div class="column2">
+          <h2>
+            Strak en gebruiksvriendelijk<br />
+            ontwerp
+          </h2>
+          <p class="info-1">
+            Met een strak en gebruiksvriendelijk<br />
+            ontwerp zorgt het programma ervoor<br />
+            dat de urenregistratie moeiteloos verloopt,<br />
+            waarbij de focus ligt op een heldere<br />
+            en intuïtieve gebruikerservaring.
+          </p>
+        </div>
+        <div class="column3">
+          <h2>Uptime Guarantee</h2>
+          <p class="info-1">
+            Experience the reliability of our web hosting<br />
+            with a 99% uptime guarantee, ensuring <br />your website stays
+            accessible to<br />
+            visitors around the clock
+          </p>
+        </div>
+      </div>
+      <!--price plan Section-->
+      <div id="hosting" class="wrapper">
+        <div class="card">
+          <h3>Webservers</h3>
+          <h1>$7 <span>/Maand</span></h1>
+          <p>Pros of dedicated server</p>
+          <ul>
+            <li><i class="fa-solid fa-square-check"></i> Eigen server</li>
+            <li><i class="fa-solid fa-square-check"></i> Aanpasbaarheid</li>
+            <li><i class="fa-solid fa-square-check"></i> Volledige controle</li>
+            <li>
+              <i class="fa-solid fa-square-check"></i> Privacy en controle over
+              gegevens
+            </li>
+          </ul>
+          <a onclick="toggle()">Kies Plan</a>
+        </div>
+        <div class="card">
+          <h3>VPS</h3>
+          <h1>$12 <span>/Maand</span></h1>
+          <p>Pros of VPS server</p>
+          <ul>
+            <li><i class="fa-solid fa-square-check"></i> Kostenbesparing</li>
+            <li><i class="fa-solid fa-square-check"></i> Schaalbaarheid</li>
+            <li><i class="fa-solid fa-square-check"></i> Stabiliteit</li>
+            <li>
+              <i class="fa-solid fa-square-check"></i> Betere beveiliging dan
+              shared hosting
+            </li>
+          </ul>
+          <a onclick="toggle()">Kies Plan</a>
+        </div>
+        <div class="card active">
+          <h3>Dedicated Server</h3>
+          <p>Popular</p>
+          <h1>$40 <span>/Maand</span></h1>
+          <p>Pros of webserver</p>
+          <ul>
+            <li>
+              <i class="fa-solid fa-square-check"></i> Verbeterde beveiliging
+            </li>
+            <li><i class="fa-solid fa-square-check"></i> Eigen server</li>
+            <li><i class="fa-solid fa-square-check"></i> Betrouwbaarheid</li>
+            <li><i class="fa-solid fa-square-check"></i> Betere prestaties</li>
+          </ul>
+          <a onclick="toggle()">Kies Plan</a>
+        </div>
+      </div>
+      <!--FAQs Section-->
+      <div class="row">
+        <section>
+          <h2 class="title">FAQs</h2>
+
+          <div class="faq">
+            <div class="question">
+              <h3>Welk Plan hoort bij mij?</h3>
+
+              <svg width="15" height="10" viewBox="0 0 42 25">
+                <path
+                  d="M3 3L21 21L39 3"
+                  stroke="white"
+                  stroke-width="7"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <div class="answer">
+              <p>
+                1. VPS: Flexibele oplossing voor individuen <br />en kleine
+                bedrijven die snel willen opschalen<br />
+                tegen betaalbare kosten.
+                <br />
+                2. Dedicated: Ultieme controle en prestaties voor
+                <br />veeleisende applicaties en bedrijven.
+                <br />
+                3. Webserver: Eenvoudige en kosteneffectieve hosting <br />voor
+                websites en webapplicaties.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <div class="question">
+              <h3>Welk Bestand type moet ik uploaden?</h3>
+
+              <svg width="15" height="10" viewBox="0 0 42 25">
+                <path
+                  d="M3 3L21 21L39 3"
+                  stroke="white"
+                  stroke-width="7"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <div class="answer">
+              <p>
+                We raden aan dat u een zip bestand<br />
+                doorstuurd dat is het meest efficient<br />voor ons.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <div class="question">
+              <h3>Wat is het limiet van bestanden uploaden?</h3>
+
+              <svg width="15" height="10" viewBox="0 0 42 25">
+                <path
+                  d="M3 3L21 21L39 3"
+                  stroke="white"
+                  stroke-width="7"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <div class="answer">
+              <p>Het limiet is 500mb</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <script src="app.js"></script>
+    </div>
+
+    <div id="popup">
+      <h2 class="popuph2">Upload jouw website bestanden</h2>
+      <svg
+        class="upload-vak"
+        xmlns="http://www.w3.org/2000/svg"
+        width="445"
+        height="156"
+        viewBox="0 0 445 156"
+      >
+        <g
+          id="Rectangle_2"
+          data-name="Rectangle 2"
+          fill="none"
+          stroke="#fff"
+          stroke-width="6"
+        >
+          <rect width="445" height="156" rx="17" stroke="none" />
+          <rect x="3" y="3" width="439" height="150" rx="14" fill="none" />
+        </g>
+        <path
+          id="Icon_akar-arrow-up-thick"
+          data-name="Icon akar-arrow-up-thick"
+          d="M37.554-3.462,52.467,11.485l18.14,18.18H52.281l-.037,37.319H22.863V29.664H4.5Z"
+          transform="translate(184.447 42.239)"
+          fill="none"
+          stroke="#fff"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="6"
+        />
+        <text
+          id="upload_tot_500MB"
+          data-name="upload tot 500MB"
+          transform="translate(159 136)"
+          fill="#fff"
+          font-size="16"
+          font-family="SegoeUI, Segoe UI"
+        >
+          <tspan x="0" y="0">upload tot 500MB</tspan>
+        </text>
+      </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="714"
+        height="32"
+        viewBox="0 0 714 32"
+      >
+        <line
+          id="Line_1"
+          data-name="Line 1"
+          x2="317"
+          transform="translate(0 16)"
+          fill="none"
+          stroke="#fff"
+          stroke-width="3"
+        />
+        <line
+          id="Line_2"
+          data-name="Line 2"
+          x2="317"
+          transform="translate(397 16)"
+          fill="none"
+          stroke="#fff"
+          stroke-width="3"
+        />
+        <text
+          id="of"
+          fill="#fff"
+          transform="translate(341 26)"
+          font-size="24"
+          font-family="SegoeUI, Segoe UI"
+        >
+          <tspan x="0" y="0">of</tspan>
+        </text>
+      </svg>
+      <h2 class="Urenregristatie-head">Urenregristatie</h2>
+      <p>Koop nu ons uren registratie systeem</p>
+      <a id="koop-button" target="_blank" href="https://www.google.com"
+        >Koop Hier</a
+      >
+
+      <a id="close-button" onclick="toggle()">annuleer</a>
+    </div>
+  </body>
+</html>

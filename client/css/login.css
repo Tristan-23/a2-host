@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: auto;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(180deg, white 25%, #808080 100%);
+}
+
+section {
+  width: 60%;
+  height: 60%;
+  padding: 2%;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+  background-color: #212121;
+}
+
+section article {
+  width: 55%;
+  height: 100%;
+  transition: width 2.5s ease-in-out;
+}
+
+section article header h1 {
+  font-size: 31px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+section article header h2 {
+  font-size: 20px;
+  font-weight: normal;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #c6c6c6;
+}
+
+section article header p {
+  visibility: hidden;
+  font-size: 20px;
+  color: red;
+  font-weight: 500;
+  padding: 1% 0% 1% 0%;
+}
+
+section article nav input {
+  width: 80%;
+  padding: 3%;
+  margin: 1% 0% 2.5% 0%;
+  border-radius: 10px;
+  font-size: 15px;
+
+  color: white;
+  background-color: #474747;
+}
+
+section article nav .repassword {
+  display: none;
+}
+
+section article nav h1 {
+  color: #c6c6c6;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+section article aside {
+  width: 50%;
+  height: 10%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section article aside p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  color: #c6c6c6;
+  text-decoration: none;
+}
+
+section article aside p:hover i {
+  cursor: pointer;
+}
+
+section article aside p:hover a {
+  cursor: pointer;
+}
+
+section article aside p i {
+  padding-right: 5%;
+  color: white;
+  opacity: 25%;
+}
+
+section article footer {
+  width: 50%;
+  height: 15%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+section article footer .buttons {
+  width: 75%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+section article footer button {
+  padding: 7.5% 10% 7.5% 10%;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+section article footer button:hover {
+  cursor: pointer;
+}
+
+section article footer #submit {
+  color: black;
+}
+
+section article footer #switch {
+  background-color: transparent;
+  color: white;
+}
+
+section .gradiant {
+  width: 35%;
+  height: 100%;
+  border-radius: 20px;
+  background: linear-gradient(45deg, #c500ff 15%, #0800ff 100%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* transition: all 2.5s ease-in-out; */
+}
+
+section .gradiant img {
+  width: 300px;
+  height: 300px;
+}

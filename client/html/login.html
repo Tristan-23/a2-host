@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pages - Login</title>
+    <link rel="icon" type="image/x-icon" href="../images/ace.png" />
+  </head>
+  <body>
+    <section>
+      <article>
+        <header>
+          <h1>Log in to your account</h1>
+          <h2>enter your email and password to log in</h2>
+          <p id="error">error message</p>
+        </header>
+        <nav>
+          <div class="mailadres">
+            <h1>E-Mail</h1>
+            <input id="mailadres" />
+          </div>
+          <div class="password">
+            <h1>Password</h1>
+            <input id="password" type="password" />
+          </div>
+          <div class="repassword">
+            <h1>Confirm Password</h1>
+            <input id="repassword" type="password" />
+          </div>
+        </nav>
+        <aside>
+          <div style="display: none" class="register">
+            <p onclick="toggleCheck(this)">
+              <i class="fa-solid fa-circle-check"></i>
+              <a id="license">License Agreement</a>
+            </p>
+            <p onclick="toggleCheck(this)">
+              <i class="fa-solid fa-circle-check"></i>
+              <a id="terms">Terms Of Service</a>
+            </p>
+          </div>
+          <div class="login">
+            <p onclick="toggleCheck(this)">
+              <i class="fa-solid fa-circle-check"></i>
+              <a id="r_mail">Remember Me</a>
+            </p>
+          </div>
+        </aside>
+        <footer>
+          <div class="buttons">
+            <button id="submit">Inloggen</button>
+            <button id="switch">Registeren</button>
+          </div>
+        </footer>
+      </article>
+      <div class="gradiant">
+        <img src="../images/small_logo.png" />
+      </div>
+    </section>
+    <script src="../js/login.js"></script>
+  </body>
+</html>

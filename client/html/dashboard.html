@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="../images/ace.png" />
+  </head>
+  <body>
+    <div class="nav">
+      <header>
+        <p id="current">Main</p>
+      </header>
+      <section>
+        <item id="default" class="active" onclick="toggleActive(this)">
+          <i class="fa-solid fa-gauge-high"></i>
+          <a>Dashboard</a>
+        </item>
+        <item onclick="toggleActive(this)">
+          <i class="fa-regular fa-square-full"></i>
+          <a>Klanten</a>
+        </item>
+        <item onclick="toggleActive(this)">
+          <i class="fa-regular fa-square-full"></i>
+          <a>Medewerkers</a>
+        </item>
+        <item onclick="toggleActive(this)">
+          <i class="fa-regular fa-square-full"></i>
+          <a>Opdrachten</a>
+        </item>
+      </section>
+    </div>
+    <div class="section">
+      <header>
+        <div class="left">
+          <i class="fa-solid fa-bars-staggered" style="display: none"></i>
+        </div>
+        <div class="right">
+          <div class="search">
+            <input placeholder="Zoek hier ..." style="display: none" />
+            <i class="fas fa-search" style="display: none"></i>
+          </div>
+          <div class="dropdown">
+            <p>Admin</p>
+            <i class="fa-solid fa-angle-down"></i>
+            <div class="box"></div>
+          </div>
+        </div>
+      </header>
+      <nav>
+        <div class="container">
+          <h1>Urenregistratie</h1>
+          <h2>Dashboard</h2>
+        </div>
+      </nav>
+      <article>
+        <div class="item">
+          <header>
+            <h1>Rooster</h1>
+            <h2>28 feb 2024</h2>
+          </header>
+          <div class="rectangle">
+            <div class="container">
+              <h1>Ingeklokt</h1>
+              <h2>Woe, 28th feb 2024 9.00 AM</h2>
+            </div>
+          </div>
+          <div class="circle">
+            <div id="circle">
+              <svg id="background">
+                <circle cx="75" cy="75" r="65"></circle>
+              </svg>
+              <svg id="progress">
+                <circle cx="75" cy="75" r="65"></circle>
+              </svg>
+              <p>0 hrs</p>
+            </div>
+          </div>
+          <button onclick="registerMe(this)">Inklokken</button>
+          <footer>
+            <h1>BREAK</h1>
+            <h2>45 Minutes</h2>
+          </footer>
+        </div>
+        <div class="item">
+          <header>
+            <h1>Statistieken</h1>
+          </header>
+          <div class="rectangle">
+            <div class="container">
+              <div class="text">
+                <h1>Vandaag</h1>
+                <h2>0 / 8 hrs</h2>
+              </div>
+              <div class="background">
+                <div id="today" class="progress"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rectangle">
+            <div class="container">
+              <div class="text">
+                <h1>Week</h1>
+                <h2>0 / 40 hrs</h2>
+              </div>
+              <div class="background">
+                <div id="week" class="progress"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rectangle">
+            <div class="container">
+              <div class="text">
+                <h1>Maand</h1>
+                <h2>0 / 160 hrs</h2>
+              </div>
+              <div class="background">
+                <div id="month" class="progress"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <header>
+            <h1>Activiteit</h1>
+          </header>
+          <!-- <div class="rectangle">
+            <div class="data">
+              <div class="icon">
+                <div id="circle"></div>
+              </div>
+              <div class="text">
+                <h1>Ingeklokt</h1>
+                <h2>10:00 AM</h2>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </article>
+      <aside>
+        <div class="container">
+          <header>
+            <h1>Aanwezigheid</h1>
+            <button
+              id="add"
+              style="visibility: hidden"
+              onclick="addTableRow(this)"
+            >
+              Add
+            </button>
+          </header>
+          <div class="scroll">
+            <ul id="collum">
+              <li>ID</li>
+              <li>Date</li>
+              <li>Punch In</li>
+              <li>Punch Out</li>
+              <li>Production</li>
+              <li>Break</li>
+            </ul>
+            <ul id="data 1">
+              <li>1</li>
+              <li>27 feb 2024</li>
+              <li>9 AM</li>
+              <li>3 PM</li>
+              <li>6 hrs</li>
+              <li>45 min</li>
+            </ul>
+            <ul id="data 2">
+              <li>2</li>
+              <li>27 feb 2024</li>
+              <li>9 AM</li>
+              <li>3 PM</li>
+              <li>6 hrs</li>
+              <li>45 min</li>
+            </ul>
+            <ul id="data 3">
+              <li>3</li>
+              <li>27 feb 2024</li>
+              <li>9 AM</li>
+              <li>3 PM</li>
+              <li>6 hrs</li>
+              <li>45 min</li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <script src="../js/dashboard.js"></script>
+  </body>
+</html>
